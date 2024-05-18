@@ -1,21 +1,7 @@
-import React, { useState } from "react";
-
 export default function Navbar(props) {
-  const [mode, setmode] = useState("LIGHT MODE");
-  function handleMe() {
-    if (mode === "LIGHT MODE") {
-      setmode("DARK MODE");
-    } else {
-      setmode("LIGHT MODE");
-    }
-  }
-
   return (
-    <div className={mode}>
-      <nav className="navbar">
-        <a className="navbar-brand" href="/">
-          {props.name}
-        </a>
+    <div className={props.mode}>
+      <nav className="navbar" id="navbar">
         <a className="nav-link" href="/">
           Home
         </a>
@@ -25,9 +11,9 @@ export default function Navbar(props) {
             type="checkbox"
             role="switch"
             id="flexSwitchCheckDefault"
-            onClick={handleMe}
+            onClick={props.toggleMode}
           />
-          {mode}
+          {props.mode}
         </li>
       </nav>
       <ul className="unorders"></ul>

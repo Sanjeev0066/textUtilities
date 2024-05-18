@@ -1,55 +1,58 @@
-.form-group{
-  background-color:#616767;
-
+.form-group {
+  background-color: #ba94dd;
+  border-radius: 15%;
+  padding: 25px;
 }
-#exampleFormControlTextarea1{
-  background-color:#616767;
+body {
+  background-color: rgb(11 10 10);
 }
 
-#navbarSupportedContent{
+#exampleFormControlTextarea1 {
+  background-color: #a7a1ad;
+}
+
+#navbarSupportedContent {
   display: flex;
   background-color: aqua;
 }
 
-#flexSwitchCheckChecked{
-  float: right;  
+#flexSwitchCheckChecked {
+  float: right;
   width: 136px;
 }
 
-.unorders
-{
+.unorders {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 2%;
 }
-ul li{
+ul li {
   list-style: none;
   margin-left: 10px;
   margin-right: 10px;
 }
-.navbar{
-    margin-left: 8px;
-    margin-right: 8px;
+.navbar {
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-.check{
+.check {
   font-size: x-large;
-  
 }
-.form-group:hover{
-  border: 1px solid rgb(81, 38, 191);
-  scale: 1.01;
+.form-group:hover {
+  border: 0.5px solid rgb(81, 38, 191);
+  scale: 1.02;
 }
-body {
-  background: linear-gradient(
-    190deg,
-    rgb(134, 123, 205) 0%,
-    rgb(106, 90, 171) 100%
-  );
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  color: #222;
-  overflow: hidden;
+
+.form-switch .form-check-input:focus:not(:checked) {
+  border-color: rgba(255, 0, 0, 0.25);
+  outline: 0;
+  background-color: #e01111;
+  box-shadow: 0 0 0 0 rgba(249, 3, 3, 0);
+}
+.form-switch .form-check-input:checked {
+  background-color: #000000;
+  border-color: #0d0d0d;
+  border: none;
 }

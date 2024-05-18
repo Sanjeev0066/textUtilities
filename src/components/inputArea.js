@@ -8,7 +8,6 @@ export default function InputForm(props) {
   }
   function trimSpace() {
     let a = first.trim(" ");
-
     a = a
       .split(" ")
       .filter((word) => word.length > 0)
